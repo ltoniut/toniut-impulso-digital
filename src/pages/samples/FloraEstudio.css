@@ -1,0 +1,741 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap');
+
+.flora-site {
+  --flora-cream: #f8f6f0;
+  --flora-paper: #efede4;
+  --flora-green: #435b49;
+  --flora-dark: #28372e;
+  --flora-muted: #77796e;
+  --flora-accent: #b77b69;
+
+  color: var(--flora-dark);
+  background: var(--flora-cream);
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: clip;
+}
+
+.flora-site * {
+  box-sizing: border-box;
+}
+
+.flora-site a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.flora-header {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 25px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.flora-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+}
+
+.flora-brand-name {
+  color: var(--flora-green);
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: -1.5px;
+}
+
+.flora-brand-name span {
+  color: var(--flora-accent);
+}
+
+.flora-brand-caption {
+  margin-top: 5px;
+  color: var(--flora-muted);
+  font-size: 0.57rem;
+  letter-spacing: 2.2px;
+}
+
+.flora-nav {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
+
+.flora-nav a {
+  color: #5d6258;
+  font-size: 0.84rem;
+  transition: color 180ms ease;
+}
+
+.flora-nav a:hover {
+  color: var(--flora-accent);
+}
+
+.flora-header-cta {
+  padding: 12px 19px;
+  border: 1px solid #a8ad9f;
+  border-radius: 2px;
+  color: var(--flora-green);
+  font-size: 0.8rem;
+  transition: all 180ms ease;
+}
+
+.flora-header-cta:hover {
+  color: white;
+  background: var(--flora-green);
+  border-color: var(--flora-green);
+}
+
+.flora-header-cta span {
+  margin-left: 12px;
+}
+
+.flora-hero {
+  max-width: 1440px;
+  min-height: 650px;
+  margin: 0 auto;
+  padding: 65px 7% 85px;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 7%;
+  position: relative;
+}
+
+.flora-hero-copy {
+  max-width: 510px;
+  padding: 35px 0;
+}
+
+.flora-eyebrow {
+  display: block;
+  margin-bottom: 22px;
+  color: var(--flora-accent);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+
+.flora-hero h1 {
+  margin: 0;
+  color: var(--flora-green);
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(3.2rem, 5.2vw, 5.2rem);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -2px;
+}
+
+.flora-hero h1 em,
+.flora-intro h2 em,
+.flora-section-heading h2 em,
+.flora-occasions h2 em,
+.flora-contact h2 em {
+  color: var(--flora-accent);
+  font-weight: 500;
+}
+
+.flora-hero-copy > p {
+  max-width: 410px;
+  margin: 28px 0 30px;
+  color: var(--flora-muted);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.flora-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 16px 22px;
+  color: white !important;
+  background: var(--flora-green);
+  font-size: 0.82rem;
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+.flora-button:hover {
+  background: var(--flora-dark);
+  transform: translateY(-2px);
+}
+
+.flora-button span {
+  font-size: 1.1rem;
+}
+
+.flora-hero-note {
+  display: block;
+  margin-top: 27px;
+  color: #99998e;
+  font-size: 0.7rem;
+  letter-spacing: 0.5px;
+}
+
+.flora-hero-image {
+  height: 510px;
+  position: relative;
+}
+
+.flora-hero-image::before {
+  content: '';
+  position: absolute;
+  inset: 22px -22px -22px 22px;
+  border: 1px solid #c7cbbd;
+}
+
+.flora-hero-image img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.flora-image-caption {
+  position: absolute;
+  right: -15px;
+  bottom: 28px;
+  padding: 13px 18px;
+  color: var(--flora-green);
+  background: var(--flora-cream);
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.flora-hero-number {
+  position: absolute;
+  right: 7%;
+  bottom: 35px;
+  color: #99998e;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+}
+
+.flora-intro {
+  padding: 105px 20px;
+  background: var(--flora-paper);
+  text-align: center;
+}
+
+.flora-intro .flora-eyebrow {
+  margin-bottom: 24px;
+}
+
+.flora-intro h2 {
+  max-width: 760px;
+  margin: 0 auto;
+  color: var(--flora-green);
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.flora-intro p {
+  max-width: 610px;
+  margin: 25px auto 0;
+  color: var(--flora-muted);
+  font-size: 0.95rem;
+  line-height: 1.9;
+}
+
+.flora-collection {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 110px 7%;
+}
+
+.flora-section-heading {
+  margin-bottom: 48px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 35px;
+}
+
+.flora-section-heading h2,
+.flora-occasions h2,
+.flora-gallery h2 {
+  margin: 0;
+  color: var(--flora-green);
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.3rem, 4vw, 3.5rem);
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.flora-section-heading .flora-eyebrow {
+  margin-bottom: 15px;
+}
+
+.flora-section-heading > p {
+  max-width: 340px;
+  margin: 0 0 5px;
+  color: var(--flora-muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.flora-product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.flora-product-image {
+  height: 390px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background: var(--flora-paper);
+}
+
+.flora-product-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 500ms ease;
+}
+
+.flora-product-image:hover img {
+  transform: scale(1.045);
+}
+
+.flora-product-index {
+  position: absolute;
+  top: 16px;
+  left: 17px;
+  color: white;
+  font-size: 0.72rem;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 5px #333;
+}
+
+.flora-product-arrow {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  color: var(--flora-green);
+  background: var(--flora-cream);
+  border-radius: 50%;
+  transition: transform 180ms ease;
+}
+
+.flora-product-image:hover .flora-product-arrow {
+  transform: rotate(45deg);
+}
+
+.flora-product-info {
+  padding: 20px 2px 0;
+}
+
+.flora-product-info h3 {
+  margin: 0 0 8px;
+  color: var(--flora-green);
+  font-family: 'Playfair Display', serif;
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+.flora-product-info p {
+  min-height: 48px;
+  margin: 0 0 16px;
+  color: var(--flora-muted);
+  font-size: 0.84rem;
+  line-height: 1.65;
+}
+
+.flora-product-info > a {
+  color: var(--flora-accent);
+  font-size: 0.77rem;
+  font-weight: 700;
+}
+
+.flora-product-info > a:hover {
+  text-decoration: underline;
+}
+
+.flora-occasions {
+  padding: 100px 7%;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 9%;
+  background: var(--flora-paper);
+}
+
+.flora-occasions-heading {
+  max-width: 430px;
+}
+
+.flora-occasions-heading .flora-eyebrow {
+  margin-bottom: 20px;
+}
+
+.flora-occasion-list {
+  border-top: 1px solid #d4d5ca;
+}
+
+.flora-occasion {
+  min-height: 105px;
+  padding: 20px 5px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  border-bottom: 1px solid #d4d5ca;
+  transition: padding 180ms ease;
+}
+
+.flora-occasion:hover {
+  padding-left: 13px;
+}
+
+.flora-occasion-number {
+  color: var(--flora-accent);
+  font-size: 0.72rem;
+}
+
+.flora-occasion-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.flora-occasion-text strong {
+  color: var(--flora-green);
+  font-family: 'Playfair Display', serif;
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+.flora-occasion-text small {
+  color: var(--flora-muted);
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+.flora-occasion-arrow {
+  color: var(--flora-accent);
+  font-size: 1.1rem;
+}
+
+.flora-gallery {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 105px 7%;
+}
+
+.flora-gallery-heading {
+  margin-bottom: 35px;
+}
+
+.flora-gallery-heading .flora-eyebrow {
+  margin-bottom: 15px;
+}
+
+.flora-gallery h2 {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+}
+
+.flora-gallery-grid {
+  height: 360px;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr 1fr;
+  gap: 18px;
+}
+
+.flora-gallery-grid img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.flora-contact {
+  padding: 90px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 45px;
+  color: white;
+  background: var(--flora-green);
+}
+
+.flora-contact > div {
+  max-width: 600px;
+}
+
+.flora-contact .flora-eyebrow {
+  color: #d5b0a2;
+}
+
+.flora-contact h2 {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.3rem, 4vw, 3.5rem);
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.flora-contact h2 em {
+  color: #e1b9a8;
+}
+
+.flora-contact p {
+  max-width: 510px;
+  margin: 20px 0 0;
+  color: #d9dfd7;
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.flora-button-light {
+  flex-shrink: 0;
+  color: var(--flora-green) !important;
+  background: var(--flora-cream);
+}
+
+.flora-button-light:hover {
+  color: white !important;
+  background: var(--flora-dark);
+}
+
+.flora-footer {
+  max-width: 1440px;
+  min-height: 110px;
+  margin: 0 auto;
+  padding: 25px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.flora-footer > span {
+  color: var(--flora-muted);
+  font-size: 0.72rem;
+}
+
+.flora-footer .flora-brand-name {
+  font-size: 1.7rem;
+}
+
+@media (max-width: 900px) {
+  .flora-header {
+    padding: 22px 5%;
+  }
+
+  .flora-nav {
+    gap: 20px;
+  }
+
+  .flora-hero {
+    padding: 45px 6% 75px;
+    gap: 5%;
+  }
+
+  .flora-hero-image {
+    height: 430px;
+  }
+
+  .flora-hero h1 {
+    font-size: clamp(2.8rem, 6vw, 4rem);
+  }
+
+  .flora-collection {
+    padding: 85px 6%;
+  }
+
+  .flora-product-grid {
+    gap: 18px;
+  }
+
+  .flora-product-image {
+    height: 300px;
+  }
+
+  .flora-occasions {
+    padding: 85px 6%;
+    gap: 5%;
+  }
+
+  .flora-gallery {
+    padding: 85px 6%;
+  }
+
+  .flora-contact {
+    padding: 75px 7%;
+  }
+}
+
+@media (max-width: 650px) {
+  .flora-header {
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .flora-brand-name {
+    font-size: 1.8rem;
+  }
+
+  .flora-nav {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    gap: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #e4e2d9;
+  }
+
+  .flora-nav a {
+    font-size: 0.76rem;
+  }
+
+  .flora-header-cta {
+    padding: 10px 12px;
+    font-size: 0.72rem;
+  }
+
+  .flora-hero {
+    padding: 40px 22px 65px;
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .flora-hero-copy {
+    padding: 10px 0 0;
+  }
+
+  .flora-hero h1 {
+    max-width: 470px;
+    font-size: clamp(3rem, 12vw, 4.3rem);
+  }
+
+  .flora-hero-copy > p {
+    font-size: 0.93rem;
+  }
+
+  .flora-hero-image {
+    height: 390px;
+    margin-right: 12px;
+  }
+
+  .flora-hero-image::before {
+    inset: 13px -13px -13px 13px;
+  }
+
+  .flora-image-caption {
+    right: -12px;
+    bottom: 18px;
+    font-size: 0.9rem;
+  }
+
+  .flora-hero-number {
+    right: 22px;
+    bottom: 25px;
+  }
+
+  .flora-intro {
+    padding: 75px 25px;
+  }
+
+  .flora-intro h2 {
+    font-size: 2.3rem;
+  }
+
+  .flora-collection {
+    padding: 75px 22px;
+  }
+
+  .flora-section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .flora-section-heading h2,
+  .flora-occasions h2 {
+    font-size: 2.6rem;
+  }
+
+  .flora-product-grid {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .flora-product-image {
+    height: 390px;
+  }
+
+  .flora-product-info p {
+    min-height: 0;
+  }
+
+  .flora-occasions {
+    padding: 75px 22px;
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .flora-occasion {
+    gap: 15px;
+  }
+
+  .flora-occasion-text strong {
+    font-size: 1.2rem;
+  }
+
+  .flora-gallery {
+    padding: 75px 22px;
+  }
+
+  .flora-gallery-grid {
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 230px 180px;
+    gap: 10px;
+  }
+
+  .flora-gallery-grid img:first-child {
+    grid-column: 1 / -1;
+  }
+
+  .flora-contact {
+    padding: 70px 25px;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .flora-contact h2 {
+    font-size: 2.7rem;
+  }
+
+  .flora-footer {
+    padding: 30px 22px;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flora-site *,
+  .flora-site *::before,
+  .flora-site *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
