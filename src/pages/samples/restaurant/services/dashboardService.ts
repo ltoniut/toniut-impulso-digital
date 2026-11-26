@@ -1,4 +1,4 @@
-import type { DashboardActivity, DashboardSummary } from '../types'
+import type { DashboardActivity, DashboardSummary, PurchaseOrder } from '../types'
 import { ingredientService } from './ingredientService'
 import { supplierService } from './supplierService'
 import { purchaseOrderService } from './purchaseOrderService'

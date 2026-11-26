@@ -1,12 +1,5 @@
-import type { Ingredient, PurchaseOrder, StockMovement } from '../types'
+import type { Ingredient, StockMovement } from '../types'
 import { readStorage, writeStorage, storageKeys } from './storage'
-
-const statusLabels: Record<PurchaseOrder['status'], string> = {
-  draft: 'Borrador',
-  pending: 'Pendiente',
-  received: 'Recibida',
-  cancelled: 'Cancelada',
-}
 
 function getIngredients(): Ingredient[] {
   return readStorage<Ingredient[]>(storageKeys.ingredients)

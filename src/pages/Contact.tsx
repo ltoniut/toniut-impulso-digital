@@ -3,7 +3,7 @@ import Button from '../components/Button'
 import { useLocation } from 'react-router'
 import { projectOptions } from '../data/projectOptions'
 import './Contact.css'
-import { useState, type FormEvent } from 'react'
+import { type FormEvent } from 'react'
 
 const WHATSAPP_NUMBER = '5492235475464'
 const whatsappLink = (message: string) =>
